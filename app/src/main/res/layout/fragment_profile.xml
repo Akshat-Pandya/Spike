@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mytoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="start">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="My Profile"
+                    android:fontFamily="@font/bigshot_one"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="26sp" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:id="@+id/toolbar_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@+id/mytoolbar"
+            android:background="@color/gray"/>
+        <!-- Circle Image User Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewUserProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/mytoolbar"
+            android:background="@drawable/circular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/textViewUsernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewUserProfile"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10sp"
+
+            android:text="Username:"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewUsernameLabel"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/box"
+            android:padding="6dp"
+            android:textColor="@color/gray"
+            android:layout_marginStart="10sp"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:hint="Channel Name"/>
+
+        <!-- User Bio -->
+        <TextView
+            android:id="@+id/textViewUserBioLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewUsername"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="User Bio:"/>
+
+        <TextView
+            android:id="@+id/textViewUserBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewUserBioLabel"
+            android:textColor="@color/gray"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/box"
+            android:padding="6dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray"
+            android:hint="Hey there , I am using Spike ..."/>
+
+        <!-- Contact Details -->
+        <TextView
+            android:id="@+id/textViewContactDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewUserBio"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Contact Details:"/>
+
+        <TextView
+            android:id="@+id/textViewContactDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewContactDetailsLabel"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/box"
+            android:padding="6dp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray"
+            android:hint="xyz@gmail.com"/>
+
+
+        <!-- Interests - TextView -->
+        <TextView
+            android:id="@+id/textViewInterestsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Interests:"
+            android:layout_centerHorizontal="false"
+            android:layout_below="@+id/textViewContactDetails"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewInterests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewInterestsLabel"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/box"
+            android:padding="6dp"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray"
+            android:hint="Entertainment , Comedy , Technology"
+            android:textColor="@color/gray" />
+
+
+        <ImageView
+            android:id="@+id/buttonEdit"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/textViewInterests"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/pen"
+            />
+
+        <!-- My Subscribers Count - TextView -->
+        <TextView
+            android:id="@+id/textViewSubscribersCountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonEdit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:text="Subscribers : "/>
+
+        <TextView
+            android:id="@+id/textViewSubscribersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonEdit"
+            android:layout_toRightOf="@+id/textViewSubscribersCountLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/gray"
+            android:textStyle="bold|italic"
+            android:textSize="16sp"
+            android:text="100"/>
+
+        <Button
+            android:id="@+id/videosLiked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="VIDEOS LIKED"
+            android:textStyle="bold"
+            android:backgroundTint="@color/red"
+            android:textSize="16sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_below="@+id/textViewSubscribersCountLabel"
+            />
+        <Button
+            android:id="@+id/videosPosted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="VIDEOS POSTED"
+            android:backgroundTint="@color/red"
+            android:textSize="16sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_below="@+id/videosLiked"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewCommunityGuidelines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/videosPosted"
+            android:textStyle="italic"
+            android:textColor="@color/gray"
+            android:text="Community Guidelines"/>
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+

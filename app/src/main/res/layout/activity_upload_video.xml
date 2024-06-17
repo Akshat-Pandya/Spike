@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".UploadVideo">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/backicon"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/backicon"
+                android:text="Upload a video "
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/mytoolbar"
+        android:background="@color/gray"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_divider">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mytoolbar"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp">
+
+            <EditText
+                android:id="@+id/editTextVideoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:padding="6dp"
+                android:hint="Video Title"
+                android:layout_marginTop="12dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Select video category : "
+                android:textSize="20sp"
+                android:textColor="@color/gray"
+                android:layout_below="@+id/editTextVideoTitle"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupVideoType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonEducational"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Educational" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonEntertainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Entertainment" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonTechnology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Technology" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="News" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Other" />
+
+                <!-- Add more radio buttons for other video types -->
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewSelectVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroupVideoType"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Select Video : "
+                android:textColor="@color/gray"/>
+
+            <Button
+                android:id="@+id/btnSelectVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSelectVideo"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                android:text="Select Video" />
+
+            <TextView
+                android:id="@+id/textViewSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSelectVideo"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Select Thumbnail Image : "
+                android:textColor="@color/gray"/>
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSelectImage"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Select Image"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/editTextVideoDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:padding="6dp"
+                android:layout_below="@id/btnSelectImage"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:hint="Video Duration"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextVideoDuration"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#D81B60"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Upload"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnUpload"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

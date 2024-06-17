@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mytoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Header -->
+                <TextView
+                    android:id="@+id/textViewHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coming Soon"
+                    android:textSize="26sp"
+                    android:textColor="@color/black"
+                    android:drawableEnd="@drawable/fire"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <View
+            android:id="@+id/toolbar_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@+id/mytoolbar"
+            android:background="@color/gray"/>
+
+
+        <!-- Upcoming Features -->
+        <LinearLayout
+            android:id="@+id/layoutUpcomingFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/mytoolbar"
+            android:paddingTop="8dp">
+
+            <!-- Feature 1: Create a Spike -->
+            <LinearLayout
+                android:id="@+id/layoutFeature1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Create a Spike"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="350dp"
+                    android:background="@drawable/spikeconnect"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create an electric short-format clip, share your thoughts, and engage with the community in a snap!"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Feature 2: Post a Spike -->
+            <LinearLayout
+                android:id="@+id/layoutFeature2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Post a Spike"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/connect"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share your captivating moments, thoughts, and experiences with the Spike community through seamless posting."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Feature 3: Spike Live Streaming -->
+            <LinearLayout
+                android:id="@+id/layoutFeature3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. Spike Live Streaming"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/livestream"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go live and connect with your audience in real-time. Share your experiences, talents, and more through Spike Live Streaming!"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Join the Spike Developers Community -->
+        <LinearLayout
+            android:id="@+id/layoutJoinCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/layoutUpcomingFeatures"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/textViewJoinCommunity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Join Spike Developers Community "
+                android:drawableEnd="@drawable/baseline_connect_without_contact_24"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textViewCommunityInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:text="Contribute, share ideas, and connect with fellow developers to shape the future of Spike."
+                android:textSize="14sp"
+                android:paddingTop="8dp"/>
+
+            <!-- GitHub Repository and LinkedIn Group Links -->
+            <LinearLayout
+                android:id="@+id/layoutCommunityLinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/textViewGitHub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://github.com/Akshat-Pandya\n"
+                    android:textColor="#1E88E5"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/textViewLinkedIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1E88E5"
+                    android:text="https://www.linkedin.com/in/pandya-akshat\n"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
