@@ -10,22 +10,6 @@ Spike is a video streaming application that enables you to create, edit, and sha
 - **Interactive Features**: Comment, like, share, subscribe, and dislike videos.
 - **Firebase Backend**: Utilizes Firebase for backend services, ensuring a robust and scalable infrastructure.
 
-## Screenshots
-
-![Uploading IMG-20240618-WA0015.jpg…]()
-![Uploading IMG-20240618-WA0016.jpg…]()
-![Uploading IMG-20240618-WA0017.jpg…]()
-![Uploading IMG-20240618-WA0019.jpg…]()
-![Uploading IMG-20240618-WA0020.jpg…]()
-![Uploading IMG-20240618-WA0021.jpg…]()
-
-
-
-
-
-
-
-
 ## Getting Started
 
 These instructions will help you set up the project on your local machine for development and testing purposes.
