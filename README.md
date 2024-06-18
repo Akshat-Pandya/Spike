@@ -12,7 +12,19 @@ Spike is a video streaming application that enables you to create, edit, and sha
 
 ## Screenshots
 
-(Include screenshots of your application here)
+![Uploading IMG-20240618-WA0015.jpg…]()
+![Uploading IMG-20240618-WA0016.jpg…]()
+![Uploading IMG-20240618-WA0017.jpg…]()
+![Uploading IMG-20240618-WA0019.jpg…]()
+![Uploading IMG-20240618-WA0020.jpg…]()
+![Uploading IMG-20240618-WA0021.jpg…]()
+
+
+
+
+
+
+
 
 ## Getting Started
 
