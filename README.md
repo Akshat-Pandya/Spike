@@ -69,8 +69,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ### Contact
 
-- **Author**: Your Name
-- **Email**: your-email@example.com
+- **Author**: Akshat Pandya
+- **Email**: akshatpandya27072004@gmail.com
 - **GitHub**: [Akshat Pandya](https://github.com/Akshat-Pandya)
 
 Feel free to open issues or submit pull requests to improve the project. Your contributions are always welcome!
